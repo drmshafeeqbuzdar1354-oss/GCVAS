@@ -4,13 +4,17 @@
   "private": true,
   "description": "Grace College of Veterinary and Animal Sciences — site + local AI gateway helpers",
   "scripts": {
-    "start": "node index.mjs",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "ai-gateway": "dotenv -e .env.local -- node scripts/ai-gateway.mjs",
-    "ai": "node index.mjs",
-    "dev": "npx dotenv -e .env.local -- node index.mjs"
+    "ai": "node index.mjs"
   },
   "dependencies": {
-    "ai": "^1.0.0"
+    "ai": "^1.0.0",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "dotenv-cli": "^5.0.0"
