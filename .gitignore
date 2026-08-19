@@ -1,0 +1,18 @@
+# dependencies & binaries
+node_modules/
+node-bin/
+.pnp
+.pnp.js
+
+# build outputs
+.next/
+out/
+build/
+dist/
+
+# misc & OS files
+.DS_Store
+*.pem
+*.log
+.vscode/
+.env*.local

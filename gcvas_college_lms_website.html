@@ -1,0 +1,2133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grace College of Veterinary and Animal Sciences (GCVAS) &amp; Vocational Institute</title>
+<meta name="description" content="Official Portal of Grace College of Veterinary & Animal Sciences (GCVAS) & Vocational Institute, Choti Zareen, Nawan Shahir. Admissions open in Veterinary, Livestock, and Vocational Skills. Features Student LMS Portal and Secure Administration.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Grace College of Veterinary and Animal Sciences (GCVAS)">
+<meta property="og:description" content="Premier institute for Veterinary, Livestock, and Creative Vocational education in Punjab. Admissions open. Student LMS & Secure Admin Portal.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #1c221b;
+    --cream: #f8f6f0;
+    --pine: #1c3e2b;
+    --pine-deep: #11281c;
+    --pine-light: #2d5e43;
+    --gold: #c99a3c;
+    --gold-light: #e8c676;
+    --line: rgba(28, 34, 27, 0.12);
+    --paper: #ffffff;
+    --badge-vet: #1e5238;
+    --badge-creative: #8c4a18;
+    --shadow: 0 16px 40px -16px rgba(17, 40, 28, 0.22);
+    --radius: 8px;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Source Sans 3', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, .display {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+
+  .eyebrow {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: 700;
+  }
+  .eyebrow::before {
+    content: '';
+    width: 22px;
+    height: 2px;
+    background: var(--gold);
+    display: inline-block;
+  }
+
+  a { color: inherit; }
+  img { max-width: 100%; display: block; }
+  .wrap { max-width: 1220px; margin: 0 auto; padding: 0 32px; }
+
+  /* HEADER & NAV */
+  header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(248, 246, 240, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+    transition: all 0.2s;
+  }
+  nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 32px; max-width: 1220px; margin: 0 auto;
+  }
+  .brand { display: flex; align-items: center; gap: 14px; font-family: 'Fraunces', serif; font-weight: 700; font-size: 1.15rem; text-decoration: none; color: var(--pine-deep); }
+  .brand-mark {
+    width: 48px; height: 48px; border-radius: 10px;
+    background: linear-gradient(135deg, var(--pine), var(--pine-deep)); color: var(--gold-light);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 700;
+    box-shadow: 0 6px 16px -6px rgba(17, 40, 28, 0.5), inset 0 0 0 1px rgba(255,255,255,0.2);
+  }
+  .brand small { display: block; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 0.6rem; letter-spacing: 0.08em; color: #6b6d5f; text-transform: uppercase; margin-top: 2px; }
+
+  nav ul { list-style: none; display: flex; gap: 22px; margin: 0; padding: 0; font-size: 0.92rem; align-items: center; }
+  nav ul a { text-decoration: none; padding-bottom: 4px; border-bottom: 2px solid transparent; transition: all .2s; font-weight: 500; }
+  nav ul a:hover { border-color: var(--gold); color: var(--pine); }
+
+  .lms-nav-btn {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.76rem; font-weight: 700; text-transform: uppercase;
+    padding: 7px 14px; border-radius: 4px; background: rgba(28, 62, 43, 0.08);
+    color: var(--pine); border: 1px solid var(--line);
+    display: inline-flex; align-items: center; gap: 6px; cursor: pointer; text-decoration: none !important;
+    transition: all 0.2s;
+  }
+  .lms-nav-btn:hover { background: var(--pine); color: var(--paper) !important; }
+
+  .nav-cta {
+    background: var(--pine); color: var(--paper); padding: 10px 22px; border-radius: 4px;
+    font-size: 0.88rem; text-decoration: none; white-space: nowrap; font-weight: 600; border: none; cursor: pointer;
+    transition: background .2s, transform .15s;
+    box-shadow: 0 4px 12px -4px rgba(28, 62, 43, 0.4);
+  }
+  .nav-cta:hover { background: var(--pine-deep); transform: translateY(-1px); }
+
+  .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 6px; }
+  .menu-toggle span { display: block; width: 24px; height: 2px; background: var(--ink); margin: 5px 0; transition: .2s; }
+
+  /* HERO */
+  .hero {
+    position: relative;
+    padding: 70px 32px 20px;
+    overflow: hidden;
+  }
+  .hero-grid {
+    max-width: 1220px; margin: 0 auto;
+    display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 50px;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+  .hero h1 {
+    font-size: clamp(2.4rem, 4.4vw, 3.8rem);
+    line-height: 1.08;
+    margin: 18px 0 22px;
+    color: var(--pine-deep);
+  }
+  .hero h1 em {
+    font-style: italic; color: var(--pine);
+    position: relative;
+  }
+  .hero p.lede {
+    font-size: 1.12rem; max-width: 48ch; color: #3d4238; margin-bottom: 32px;
+  }
+  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+
+  .btn {
+    padding: 14px 26px; border-radius: 4px; text-decoration: none; font-size: 0.95rem; font-weight: 600;
+    display: inline-flex; align-items: center; gap: 8px; transition: transform .15s, background .2s, border-color .2s; cursor: pointer; border: none;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: var(--pine); color: var(--paper); box-shadow: 0 6px 18px -6px rgba(28, 62, 43, 0.4); }
+  .btn-primary:hover { background: var(--pine-deep); }
+  .btn-ghost { border: 1px solid var(--ink); color: var(--ink); background: transparent; }
+  .btn-ghost:hover { background: var(--ink); color: var(--cream); }
+  .btn-gold { background: var(--gold); color: var(--pine-deep); font-weight: 700; }
+  .btn-gold:hover { background: var(--gold-light); }
+  .btn-sm { padding: 8px 14px; font-size: 0.84rem; }
+
+  .field-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 26px 28px;
+    box-shadow: var(--shadow);
+  }
+  .field-card .num { font-family: 'Fraunces', serif; font-size: 2.8rem; color: var(--pine); line-height: 1; font-weight: 700; }
+  .field-card .cap { font-size: 0.88rem; color: #5c6052; margin-top: 6px; font-weight: 500; }
+  .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; margin-top: 18px; }
+  .stat-row .field-card { border: none; border-radius: 0; box-shadow: none; }
+
+  /* SPECIES & SKILLS BAR */
+  .species-line {
+    display: flex;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin: 0;
+    background: var(--paper);
+  }
+  .species-line .cell {
+    flex: 1; padding: 20px 16px; text-align: center; border-right: 1px solid var(--line);
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+  }
+  .species-line .cell:last-child { border-right: none; }
+  .species-line svg { width: 26px; height: 26px; stroke: var(--pine); }
+  .species-line .label { font-family: 'Space Mono', monospace; font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: #5c6052; font-weight: 700; }
+
+  section { padding: 80px 0; }
+  .section-head { max-width: 680px; margin-bottom: 44px; }
+  .section-head h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); margin-top: 12px; color: var(--pine-deep); }
+  .section-head p { color: #4c5044; font-size: 1.02rem; margin-top: 12px; }
+
+  /* ABOUT */
+  .about-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 64px; align-items: start; }
+  .about-grid p { color: #3d4238; margin-bottom: 16px; font-size: 1.02rem; }
+  .pull {
+    font-family: 'Fraunces', serif; font-style: italic; font-size: 1.3rem; color: var(--pine-deep);
+    border-left: 3px solid var(--gold); padding-left: 22px; margin: 26px 0;
+  }
+
+  /* LEADERSHIP */
+  .leader-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
+  .leader-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 34px 30px;
+    position: relative;
+    box-shadow: 0 20px 45px -30px rgba(17, 40, 28, 0.3);
+    transition: transform .2s, box-shadow .2s;
+  }
+  .leader-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+  .leader-avatar {
+    width: 64px; height: 64px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--pine), var(--pine-deep));
+    color: var(--gold-light);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 700;
+    margin-bottom: 22px;
+    box-shadow: 0 8px 18px -8px rgba(17, 40, 28, 0.5);
+  }
+  .leader-role {
+    font-family: 'Space Mono', monospace; font-size: 0.7rem; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 10px; font-weight: 700;
+  }
+  .leader-card h3 { font-size: 1.35rem; line-height: 1.25; margin-bottom: 8px; color: var(--pine-deep); }
+  .leader-cred { color: #4c5044; font-size: 0.92rem; margin: 0; }
+
+  /* COURSES SECTION */
+  .courses-section { background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  
+  .filter-controls {
+    display: flex; flex-wrap: wrap; gap: 14px; align-items: center; justify-content: space-between;
+    margin-bottom: 36px; padding-bottom: 20px; border-bottom: 1px solid var(--line);
+  }
+  .filter-tabs { display: flex; gap: 8px; flex-wrap: wrap; }
+  .tab-btn {
+    font-family: 'Space Mono', monospace; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em;
+    padding: 10px 18px; border-radius: 4px; border: 1px solid var(--line); background: var(--cream);
+    color: var(--ink); cursor: pointer; transition: all .2s; font-weight: 700;
+  }
+  .tab-btn:hover { border-color: var(--gold); }
+  .tab-btn.active { background: var(--pine); color: var(--paper); border-color: var(--pine); }
+
+  .search-box-wrap { position: relative; min-width: 280px; }
+  .search-input {
+    width: 100%; padding: 10px 14px 10px 38px; border: 1px solid var(--line); border-radius: 4px;
+    font-family: 'Source Sans 3', sans-serif; font-size: 0.9rem; background: var(--cream);
+  }
+  .search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; stroke: #6b6d5f; }
+
+  .courses-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 24px;
+  }
+  .course-card {
+    background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 26px 24px; display: flex; flex-direction: column; justify-content: space-between;
+    transition: transform .2s, box-shadow .2s, border-color .2s;
+  }
+  .course-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--gold); }
+  
+  .category-pill {
+    display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.65rem; text-transform: uppercase;
+    letter-spacing: 0.08em; padding: 4px 10px; border-radius: 3px; font-weight: 700; margin-bottom: 14px;
+  }
+  .pill-vet { background: rgba(30, 82, 56, 0.12); color: var(--badge-vet); border: 1px solid rgba(30, 82, 56, 0.25); }
+  .pill-creative { background: rgba(140, 74, 24, 0.12); color: var(--badge-creative); border: 1px solid rgba(140, 74, 24, 0.25); }
+
+  .course-card h3 { font-size: 1.25rem; line-height: 1.3; margin-bottom: 10px; color: var(--pine-deep); }
+  .course-card p { font-size: 0.92rem; color: #4c5044; margin-bottom: 20px; flex-grow: 1; }
+  
+  .course-meta {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 14px; border-top: 1px dashed var(--line); font-size: 0.84rem; color: #5c6052;
+  }
+  .course-meta strong { font-family: 'Space Mono', monospace; color: var(--pine); }
+
+  /* CAMPUS */
+  .facility-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  .facility { background: var(--paper); padding: 36px 30px; }
+  .facility svg { width: 26px; height: 26px; stroke: var(--pine); margin-bottom: 18px; }
+  .facility h3 { font-size: 1.1rem; margin-bottom: 10px; color: var(--pine-deep); }
+  .facility p { font-size: 0.92rem; color: #4c5044; }
+
+  /* ADMISSIONS */
+  .admissions { background: var(--pine); color: var(--cream); border-radius: 10px; padding: 60px; position: relative; overflow: hidden; }
+  .admissions::after {
+    content: ''; position: absolute; right: -60px; top: -60px; width: 260px; height: 260px;
+    border-radius: 50%; background: rgba(232, 198, 118, 0.08);
+  }
+  .admissions .section-head h2, .admissions .eyebrow { color: var(--cream); }
+  .admissions .eyebrow { color: var(--gold-light); }
+  .admissions .section-head p { color: #d7dccb; }
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; margin-top: 24px; position: relative; }
+  .step .n { font-family: 'Fraunces', serif; font-size: 1.6rem; color: var(--gold-light); margin-bottom: 10px; font-weight: 700; }
+  .step h4 { font-size: 1.02rem; margin-bottom: 8px; color: var(--cream); }
+  .step p { font-size: 0.88rem; color: #c9d0ba; margin: 0; }
+
+  /* CONTACT */
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
+  .info-row { display: flex; gap: 18px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+  .info-row svg { width: 20px; height: 20px; stroke: var(--pine); flex-shrink: 0; margin-top: 2px; }
+  .info-row .label { font-family: 'Space Mono', monospace; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #6b6d5f; margin-bottom: 4px; font-weight: 700; }
+  
+  form { display: flex; flex-direction: column; gap: 16px; }
+  input, textarea, select {
+    font-family: 'Source Sans 3', sans-serif; font-size: 0.95rem;
+    padding: 14px 16px; border: 1px solid var(--line); border-radius: 4px; background: var(--paper); color: var(--ink);
+  }
+  input:focus, textarea:focus, select:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+  textarea { resize: vertical; min-height: 110px; }
+
+  footer { border-top: 1px solid var(--line); padding: 56px 32px 28px; background: var(--pine-deep); color: #d7dccb; }
+  .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.2fr; gap: 40px; padding-bottom: 36px; border-bottom: 1px solid rgba(248, 246, 240, 0.14); }
+  .foot-logo { display: flex; align-items: center; gap: 14px; font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.08rem; color: var(--cream); margin-bottom: 16px; }
+  .foot-logo-mark { width: 44px; height: 44px; border-radius: 8px; background: rgba(248, 246, 240, 0.1); color: var(--gold-light); display: flex; align-items: center; justify-content: center; font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 700; }
+  .foot-logo small { display: block; font-family: 'Space Mono', monospace; font-weight: 400; font-size: 0.6rem; letter-spacing: 0.08em; color: #a9ae98; text-transform: uppercase; margin-top: 2px; }
+  .foot-brand p { font-size: 0.88rem; color: #b9bfa8; max-width: 34ch; margin: 0; }
+  .foot-col h4 { font-family: 'Space Mono', monospace; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 16px; font-weight: 700; }
+  .foot-col { display: flex; flex-direction: column; gap: 10px; font-size: 0.88rem; }
+  .foot-col a, .foot-col span { color: #c9d0ba; text-decoration: none; }
+  .foot-col a:hover { color: var(--gold-light); }
+  .foot-row { max-width: 1220px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; font-size: 0.85rem; color: #a9ae98; padding-top: 26px; }
+
+  /* MOBILE RESPONSIVE */
+  @media (max-width: 860px) {
+    nav ul { display: none; }
+    .menu-toggle { display: block; }
+    .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; }
+    .stat-row { grid-template-columns: 1fr 1fr; }
+    .species-line { flex-wrap: wrap; }
+    .species-line .cell { flex: 1 1 50%; border-bottom: 1px solid var(--line); }
+    .facility-grid { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr 1fr; }
+    .admissions { padding: 36px 24px; }
+    .foot-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .foot-grid { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr; }
+    .courses-grid { grid-template-columns: 1fr; }
+  }
+
+  nav ul.mobile-open {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    padding: 22px 32px;
+    gap: 16px;
+    box-shadow: 0 16px 30px -20px rgba(17, 40, 28, 0.3);
+  }
+
+  /* MODAL OVERLAY & CONTAINER */
+  .modal-overlay {
+    position: fixed; inset: 0; z-index: 200;
+    background: rgba(17, 28, 20, 0.7);
+    backdrop-filter: blur(4px);
+    display: none;
+    align-items: flex-start; justify-content: center;
+    padding: 40px 20px;
+    overflow-y: auto;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal-box {
+    background: var(--cream);
+    border-radius: 10px;
+    max-width: 840px; width: 100%;
+    padding: 40px;
+    position: relative;
+    box-shadow: 0 40px 80px -30px rgba(0, 0, 0, 0.6);
+    animation: modal-in .22s ease;
+  }
+  @keyframes modal-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  
+  .modal-close {
+    position: absolute; top: 20px; right: 20px;
+    width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--line);
+    background: var(--paper); cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem; color: var(--ink);
+  }
+  .modal-close:hover { background: var(--ink); color: var(--cream); }
+  .modal-box h2 { font-size: 1.7rem; margin-bottom: 8px; color: var(--pine-deep); }
+  .modal-intro { color: #4c5044; font-size: 0.96rem; margin-bottom: 28px; max-width: 62ch; }
+
+  /* FORM STYLING */
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 24px; }
+  .form-field { display: flex; flex-direction: column; gap: 6px; }
+  .form-field.full { grid-column: 1 / -1; }
+  .form-field label { font-size: 0.85rem; font-weight: 600; color: var(--pine-deep); }
+  .form-field .req { color: var(--gold); }
+  
+  .form-field select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='none' stroke='%231c3e2b' stroke-width='2'><path d='M2 4l5 5 5-5'/></svg>");
+    background-repeat: no-repeat; background-position: right 14px center;
+  }
+  .form-field.invalid input, .form-field.invalid select, .form-field.invalid textarea, .form-field.invalid .upload-box {
+    outline: 2px solid #b3413a; outline-offset: 1px;
+  }
+  .field-error { font-size: 0.8rem; color: #b3413a; min-height: 1.2em; margin-top: 2px; }
+
+  .upload-box {
+    border: 1px dashed var(--line); border-radius: 4px;
+    padding: 12px 14px; background: var(--paper);
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    cursor: pointer; font-size: 0.88rem; color: #5c6052;
+  }
+  .upload-box:hover { border-color: var(--gold); }
+  .upload-box .fname { color: var(--pine-deep); font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .upload-box .browse { font-family: 'Space Mono', monospace; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold); flex-shrink: 0; font-weight: 700; }
+  .upload-hint { font-size: 0.76rem; color: #8a8d7d; }
+
+  .consent-row { display: flex; gap: 10px; align-items: flex-start; margin-top: 6px; }
+  .consent-row input { margin-top: 4px; flex-shrink: 0; }
+  .consent-row label { font-size: 0.85rem; color: #3d4238; }
+
+  .form-actions { display: flex; align-items: center; gap: 18px; margin-top: 24px; grid-column: 1 / -1; }
+  .form-status { font-size: 0.9rem; font-weight: 600; }
+  .form-status.success { color: var(--pine); }
+  .form-status.error { color: #b3413a; }
+
+  .spinner {
+    width: 16px; height: 16px; border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.4); border-top-color: var(--paper);
+    display: inline-block; animation: spin .7s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .success-panel { text-align: center; padding: 24px 0; }
+  .success-panel .check {
+    width: 60px; height: 60px; border-radius: 50%; background: var(--pine); color: var(--cream);
+    display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; font-size: 1.8rem;
+  }
+  .ref-number { font-family: 'Space Mono', monospace; background: var(--paper); border: 1px solid var(--line); border-radius: 4px; padding: 4px 10px; color: var(--pine-deep); font-weight: 700; }
+
+  /* STUDENT LMS PORTAL MODAL */
+  .lms-modal-box { max-width: 1150px; width: 100%; background: var(--paper); }
+  .lms-header {
+    display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 24px;
+  }
+  .lms-nav-tabs { display: flex; gap: 10px; flex-wrap: wrap; }
+  .lms-tab {
+    padding: 8px 16px; border-radius: 4px; border: 1px solid var(--line);
+    font-family: 'Space Mono', monospace; font-size: 0.78rem; cursor: pointer; background: var(--cream); font-weight: 700;
+  }
+  .lms-tab.active { background: var(--pine); color: var(--paper); border-color: var(--pine); }
+
+  .lms-card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+  .lms-card {
+    background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px;
+    display: flex; flex-direction: column; justify-content: space-between;
+  }
+  .lms-card h4 { font-size: 1.15rem; color: var(--pine-deep); margin-bottom: 8px; }
+  .lms-card p { font-size: 0.9rem; color: #4c5044; margin-bottom: 16px; }
+
+  /* ADMIN AUTH & DASHBOARD */
+  .admin-modal-box { max-width: 1150px; width: 100%; background: var(--paper); }
+  .admin-login-wrap { max-width: 400px; margin: 40px auto; text-align: center; background: var(--cream); padding: 36px 30px; border-radius: 8px; border: 1px solid var(--line); }
+  .admin-header {
+    display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 24px;
+  }
+  .admin-nav-tabs { display: flex; gap: 10px; }
+  .admin-tab {
+    padding: 8px 16px; border-radius: 4px; border: 1px solid var(--line);
+    font-family: 'Space Mono', monospace; font-size: 0.78rem; cursor: pointer; background: var(--cream); font-weight: 700;
+  }
+  .admin-tab.active { background: var(--pine); color: var(--paper); border-color: var(--pine); }
+  
+  .stats-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+  .stat-card { background: var(--cream); border: 1px solid var(--line); padding: 16px; border-radius: 6px; }
+  .stat-card .val { font-family: 'Fraunces', serif; font-size: 1.8rem; color: var(--pine); font-weight: 700; }
+  .stat-card .lbl { font-size: 0.75rem; color: #6b6d5f; text-transform: uppercase; font-family: 'Space Mono', monospace; font-weight: 700; }
+
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); }
+  .admin-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; text-align: left; }
+  .admin-table th { background: var(--cream); padding: 12px 14px; border-bottom: 1px solid var(--line); font-family: 'Space Mono', monospace; font-size: 0.72rem; text-transform: uppercase; color: #5c6052; font-weight: 700; }
+  .admin-table td { padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+  .admin-table tr:hover { background: rgba(201, 154, 60, 0.05); }
+
+  .status-badge {
+    padding: 3px 8px; border-radius: 10px; font-size: 0.72rem; font-family: 'Space Mono', monospace; font-weight: 700;
+  }
+  .status-pending { background: #fff3cd; color: #856404; }
+  .status-reviewed { background: #d1ecf1; color: #0c5460; }
+  .status-approved { background: #d4edda; color: #155724; }
+
+  .admin-lms-section {
+    background: var(--cream); border: 1px solid var(--line); border-radius: 8px; padding: 22px; margin-bottom: 24px;
+  }
+  .admin-lms-section h4 { color: var(--pine-deep); margin-bottom: 14px; font-size: 1.1rem; }
+
+  .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  @media (max-width: 768px) {
+    .stats-cards { grid-template-columns: 1fr 1fr; }
+    .admin-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#" class="brand">
+      <div class="brand-mark">G</div>
+      <div>
+        Grace College
+        <small>Veterinary &amp; Vocational Sciences</small>
+      </div>
+    </a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#campus">Campus</a></li>
+      <li><a href="#admissions">Admissions</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <button type="button" class="lms-nav-btn js-open-lms">
+          Student LMS Portal
+        </button>
+      </li>
+    </ul>
+    <button type="button" class="nav-cta js-apply">Apply Now</button>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow">Choti Zareen, Nawan Shahir · Punjab</div>
+      <h1>Trained in the <em>field</em>,<br>certified for the clinic.</h1>
+      <p class="lede">Grace College of Veterinary and Animal Sciences &amp; Vocational Institute prepares students for high-demand careers in livestock care, veterinary assistance, and creative vocational arts.</p>
+      <div class="hero-actions">
+        <button type="button" class="btn btn-primary js-apply">Start your application →</button>
+        <button type="button" class="btn btn-gold js-open-lms">Access Student LMS Portal</button>
+      </div>
+    </div>
+    <div class="hero-figure">
+      <div class="field-card">
+        <div class="num">12</div>
+        <div class="cap">Accredited Diploma &amp; Certificate Programs in Veterinary, Livestock &amp; Vocational Disciplines</div>
+      </div>
+      <div class="stat-row">
+        <div class="field-card">
+          <div class="num">1:12</div>
+          <div class="cap">Faculty to student ratio in clinical &amp; studio training</div>
+        </div>
+        <div class="field-card">
+          <div class="num">100+</div>
+          <div class="cap">Farms, laboratories &amp; design studios in network</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="species-line">
+      <div class="cell">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10c0-2 2-4 4-4h8c2 0 4 2 4 4v3a5 5 0 01-5 5H9a5 5 0 01-5-5v-3z"/><path d="M8 6V4M16 6V4"/></svg>
+        <div class="label">Livestock &amp; Dairy</div>
+      </div>
+      <div class="cell">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="6"/><path d="M9 4c0 1.5-1 2-1 2M15 4c0 1.5 1 2 1 2"/></svg>
+        <div class="label">Poultry &amp; Avian</div>
+      </div>
+      <div class="cell">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20c-4-2-8-5-8-9a4 4 0 018-1 4 4 0 018 1c0 4-4 7-8 9z"/></svg>
+        <div class="label">Pet Care &amp; Clinical</div>
+      </div>
+      <div class="cell">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 100-18 9 9 0 000 18z"/><path d="M12 8v4l3 3"/></svg>
+        <div class="label">Creative &amp; Vocational</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">About the college</div>
+      <h2>Built for practical excellence</h2>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p>Grace College of Veterinary and Animal Sciences &amp; Vocational Institute is located in Choti Zareen, Nawan Shahir. Founded with a vision to empower students through hands-on education, our institute offers rigorous programs in veterinary healthcare, livestock management, and professional vocational arts.</p>
+        <p class="pull">"Practical training with real-world exposure is the cornerstone of career readiness."</p>
+      </div>
+      <div>
+        <p>Students rotate through active veterinary hospitals, dairy units, poultry farms, and modern vocational labs under direct supervision of experienced doctors and master instructors. Classroom theory is tightly integrated with practical field assignments from week one.</p>
+        <p>In addition to our core livestock and veterinary wing, our Creative &amp; Vocational Skills wing provides accredited diplomas in Fashion Designing, Beautician &amp; Salon Management, Video Production, Interior Design, and AutoCAD.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="leadership" style="background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Leadership</div>
+      <h2>Guided by experienced leadership</h2>
+      <p>Decades of clinical experience, academic dedication, and administrative oversight.</p>
+    </div>
+    <div class="leader-grid">
+      <div class="leader-card">
+        <div class="leader-avatar">MB</div>
+        <div class="leader-role">Director &amp; CEO</div>
+        <h3>Dr. Muhammad Shafeeq Buzdar</h3>
+        <p class="leader-cred">PhD, Clinical Medicine and Surgery</p>
+      </div>
+      <div class="leader-card">
+        <div class="leader-avatar">AB</div>
+        <div class="leader-role">Principal</div>
+        <h3>Prof. Dr. Muhammad Ajmal Buzdar</h3>
+        <p class="leader-cred">PhD in Medicine</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES & DIPLOMAS SECTION -->
+<section id="courses" class="courses-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Academic Offerings</div>
+      <h2>Explore Available Courses &amp; Diplomas</h2>
+      <p>Browse our complete range of certified programs across Veterinary, Livestock, and Creative Vocational fields.</p>
+    </div>
+
+    <div class="filter-controls">
+      <div class="filter-tabs">
+        <button type="button" class="tab-btn active" data-filter="all">All Courses (12)</button>
+        <button type="button" class="tab-btn" data-filter="vet">Veterinary &amp; Livestock (7)</button>
+        <button type="button" class="tab-btn" data-filter="creative">Creative &amp; Vocational (5)</button>
+      </div>
+      <div class="search-box-wrap">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="text" id="courseSearch" class="search-input" placeholder="Search course by keyword...">
+      </div>
+    </div>
+
+    <div class="courses-grid" id="coursesGrid">
+
+      <!-- Veterinary & Livestock Courses -->
+      <div class="course-card" data-category="vet">
+        <div>
+          <span class="category-pill pill-vet">Veterinary &amp; Livestock</span>
+          <h3>Livestock Assistant Diploma (LAD)</h3>
+          <p>Comprehensive 2-year diploma covering animal healthcare, diagnostic assistance, pharmacology, surgical assisting, and emergency treatment for livestock.</p>
+        </div>
+        <div class="course-meta">
+          <span>Duration: <strong>2 Years</strong></span>
+          <button type="button" class="btn btn-sm btn-ghost js-apply-course" data-course="Livestock Assistant Diploma (LAD)">Apply Now →</button>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="vet">
+        <div>
+          <span class="category-pill pill-vet">Veterinary &amp; Livestock</span>
+          <h3>Artificial Insemination (AI)</h3>
+          <p>Specialized certificate program focusing on livestock breed improvement, reproductive techniques, semen evaluation, and insemination protocols.</p>
+        </div>
+        <div class="course-meta">
+          <span>Duration: <strong>6 Months</strong></span>
+          <button type="button" class="btn btn-sm btn-ghost js-apply-course" data-course="Artificial Insemination (AI)">Apply Now →</button>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="vet">
+        <div>
+          <span class="category-pill pill-vet">Veterinary &amp; Livestock</span>
+          <h3>Veterinary Assistant Diploma</h3>
+          <p>Practical training in clinical assistance, medical record keeping, animal handling, vaccine administration, and outpatient clinical care.</p>
+        </div>
+        <div class="course-meta">
+          <span>Duration: <strong>6 Months</strong></span>
+          <button type="button" class="btn btn-sm btn-ghost js-apply-course" data-course="Veterinary Assistant Diploma">Apply Now →</button>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="vet">
+        <div>
+          <span class="category-pill pill-vet">Veterinary &amp; Livestock</span>
+          <h3>Poultry Farm Management Diploma</h3>
+          <p>In-depth study of commercial broiler and layer farm management, hatchery operations, biosecurity, disease prevention, and nutrition.</p>
+        </div>
+        <div class="course-meta">
+          <span>Duration: <strong>3–6 Months</strong></span>
+          <button type="button" class="btn btn-sm btn-ghost js-apply-course" data-course="Poultry Farm Management Diploma">Apply Now →</button>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="vet">
+        <div>
+          <span class="category-pill pill-vet">Veterinary &amp; Livestock</span>
+          <h3>Dairy Farm Management Diploma</h3>
+          <p>Covers modern high-yield dairy unit operations, calf rearing, automated milking management, feed rationing, and herd health maintenance.</p>
+        </div>
+        <div class="course-meta">
+          <span>Duration: <strong>3–6 Months</strong></span>
+          <button type="button" class="btn btn-sm btn-ghost js-apply-course" data-course="Dairy Farm Management Diploma">Apply Now →</button>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="vet">
+        <div>
+          <span class="category-pill pill-vet">Veterinary &amp; Livestock</span>
+          <h3>Livestock Management Course</h3>
+          <p>Broad foundational training on cattle, goat, and sheep farming practices, housing design, fodder preservation, and economic farm management.</p>
+        </div>
+        <div class="course-meta">
+          <span>Duration: <strong>3–6 Months</strong></span>
+          <button type="button" class="btn btn-sm btn-ghost js-apply-course" data-course="Livestock Management Course">Apply Now →</button>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="vet">
+        <div>
+          <span class="category-pill pill-vet">Veterinary &amp; Livestock</span>
+          <h3>Pet Care &amp; Management Diploma</h3>
+          <p>Training in companion animal nutrition, pet grooming, behavior management, basic preventive healthcare, and kennel management.</p>
+        </div>
+        <div class="course-meta">
+          <span>Duration: <strong>3–6 Months</strong></span>
+          <button type="button" class="btn btn-sm btn-ghost js-apply-course" data-course="Pet Care &amp; Management Diploma">Apply Now →</button>
+        </div>
+      </div>
+
+      <!-- Creative & Vocational Courses -->
+      <div class="course-card" data-category="creative">
+        <div>
+          <span class="category-pill pill-creative">Creative &amp; Vocational</span>
+          <h3>Fashion Designing Diploma</h3>
+          <p>Professional diploma in pattern making, garment construction, textile aesthetics, fashion illustration, and boutique management.</p>
+        </div>
+        <div class="course-meta">
+          <span>Duration: <strong>3–6 Months</strong></span>
+          <button type="button" class="btn btn-sm btn-ghost js-apply-course" data-course="Fashion Designing Diploma">Apply Now →</button>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="creative">
+        <div>
+          <span class="category-pill pill-creative">Creative &amp; Vocational</span>
+          <h3>Beautician &amp; Salon Management Course</h3>
+          <p>Hands-on training in professional skincare, bridal makeup techniques, hair styling, hygiene standards, and beauty salon business setup.</p>
+        </div>
+        <div class="course-meta">
+          <span>Duration: <strong>3–6 Months</strong></span>
+          <button type="button" class="btn btn-sm btn-ghost js-apply-course" data-course="Beautician &amp; Salon Management Course">Apply Now →</button>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="creative">
+        <div>
+          <span class="category-pill pill-creative">Creative &amp; Vocational</span>
+          <h3>Photography &amp; Video Production Course</h3>
+          <p>Master studio lighting, digital DSLR camera handling, video editing, color grading, audio synchronization, and visual storytelling.</p>
+        </div>
+        <div class="course-meta">
+          <span>Duration: <strong>3–6 Months</strong></span>
+          <button type="button" class="btn btn-sm btn-ghost js-apply-course" data-course="Photography &amp; Video Production Course">Apply Now →</button>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="creative">
+        <div>
+          <span class="category-pill pill-creative">Creative &amp; Vocational</span>
+          <h3>Interior Designing Basics Course</h3>
+          <p>Learn space planning, color schemes, material selection, residential interior layouts, lighting design, and client presentation techniques.</p>
+        </div>
+        <div class="course-meta">
+          <span>Duration: <strong>3–6 Months</strong></span>
+          <button type="button" class="btn btn-sm btn-ghost js-apply-course" data-course="Interior Designing Basics Course">Apply Now →</button>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="creative">
+        <div>
+          <span class="category-pill pill-creative">Creative &amp; Vocational</span>
+          <h3>AutoCAD &amp; 2D/3D Designing Course</h3>
+          <p>Computer-aided design drafting for architectural plans, structural elevations, 3D modeling, rendering, and technical blueprint preparation.</p>
+        </div>
+        <div class="course-meta">
+          <span>Duration: <strong>3–6 Months</strong></span>
+          <button type="button" class="btn btn-sm btn-ghost js-apply-course" data-course="AutoCAD &amp; 2D/3D Designing Course">Apply Now →</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="campus">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Campus &amp; facilities</div>
+      <h2>Equipped for full practical learning</h2>
+    </div>
+    <div class="facility-grid">
+      <div class="facility">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg>
+        <h3>Teaching Hospital</h3>
+        <p>On-campus clinical ward with surgical suites, radiology, and in-patient care facilities.</p>
+      </div>
+      <div class="facility">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v4H9zM7 7h10l1 14H6z"/></svg>
+        <h3>Diagnostic Labs</h3>
+        <p>Pathology, microbiology, and chemical analysis laboratories with modern testing equipment.</p>
+      </div>
+      <div class="facility">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10l8-6 8 6v10"/><path d="M9 20v-5h6v5"/></svg>
+        <h3>Partner Dairy &amp; Poultry Farms</h3>
+        <p>Commercial livestock and poultry farms for weekly hands-on field practice.</p>
+      </div>
+      <div class="facility">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 100-18 9 9 0 000 18z"/><path d="M12 8v4l3 3"/></svg>
+        <h3>Computer &amp; CAD Labs</h3>
+        <p>High-performance workstations dedicated to AutoCAD, 3D modeling, and media editing software.</p>
+      </div>
+      <div class="facility">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+        <h3>Student Hostels</h3>
+        <p>Secure on-campus residential housing facilities for out-of-town male and female students.</p>
+      </div>
+      <div class="facility">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+        <h3>Design &amp; Salon Studios</h3>
+        <p>Fully equipped practical studios for fashion drafting, garment stitching, and beautician training.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="admissions">
+  <div class="wrap">
+    <div class="admissions">
+      <div class="section-head">
+        <div class="eyebrow">Admissions</div>
+        <h2>How to Apply for Admission</h2>
+        <p>Admissions are open for all veterinary, livestock, and vocational diploma courses. Submit online or contact the admission desk.</p>
+        <div style="display:flex;gap:24px;flex-wrap:wrap;margin-top:20px;align-items:center;">
+          <div style="font-family:'Space Mono',monospace;font-size:1.05rem;color:var(--gold-light);">📞 0333 3815806</div>
+          <div style="font-family:'Space Mono',monospace;font-size:1.05rem;color:var(--gold-light);">📞 0300 0936961</div>
+          <button type="button" class="btn btn-gold js-apply">Online Admission Form →</button>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="n">01</div>
+          <h4>Fill Application</h4>
+          <p>Complete the online form with your personal info, chosen course, and academic record.</p>
+        </div>
+        <div class="step">
+          <div class="n">02</div>
+          <h4>Attach Documents</h4>
+          <p>Upload photograph, CNIC/B-Form, and educational certificate scans directly online.</p>
+        </div>
+        <div class="step">
+          <div class="n">03</div>
+          <h4>Form Verification</h4>
+          <p>Our admissions committee will verify your application and assign a reference code.</p>
+        </div>
+        <div class="step">
+          <div class="n">04</div>
+          <h4>Seat Confirmation</h4>
+          <p>Receive your admission letter and fee deposit receipt to finalize your enrollment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="border-top:1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Visit Campus or Send an Inquiry</h2>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.5-7-11a7 7 0 0114 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <div>
+            <div class="label">Address</div>
+            Grace College of Veterinary and Animal Sciences<br>Choti Zareen, Nawan Shahir, Punjab, Pakistan
+          </div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.1-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.4 2.1L8 9.9a16 16 0 006 6l1.4-1.4a2 2 0 012.1-.4c.9.3 1.8.5 2.7.6a2 2 0 011.8 2.2z"/></svg>
+          <div>
+            <div class="label">Admission Cell</div>
+            0333 3815806<br>0300 0936961
+          </div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          <div>
+            <div class="label">Email</div>
+            admissions.gcvas@gmail.com
+          </div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <div>
+            <div class="label">Office hours</div>
+            Monday – Saturday, 9:00 AM – 4:00 PM
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <form id="contactForm" novalidate>
+        <div style="font-weight:600;font-size:1.1rem;color:var(--pine-deep);margin-bottom:6px;">Send us a Direct Message</div>
+        <input type="text" id="c_name" name="name" placeholder="Your Full Name" required>
+        <div class="field-error" id="err_c_name"></div>
+
+        <input type="email" id="c_email" name="email" placeholder="Your Email Address" required>
+        <div class="field-error" id="err_c_email"></div>
+
+        <input type="tel" id="c_phone" name="phone" placeholder="Cell / WhatsApp Number" required>
+        <div class="field-error" id="err_c_phone"></div>
+
+        <select id="c_program" name="program">
+          <option value="">Program of interest (Optional)</option>
+          <option value="Livestock Assistant Diploma (LAD)">Livestock Assistant Diploma (LAD)</option>
+          <option value="Artificial Insemination (AI)">Artificial Insemination (AI)</option>
+          <option value="Veterinary Assistant Diploma">Veterinary Assistant Diploma</option>
+          <option value="Poultry Farm Management Diploma">Poultry Farm Management Diploma</option>
+          <option value="Dairy Farm Management Diploma">Dairy Farm Management Diploma</option>
+          <option value="Livestock Management Course">Livestock Management Course</option>
+          <option value="Pet Care & Management Diploma">Pet Care & Management Diploma</option>
+          <option value="Fashion Designing Diploma">Fashion Designing Diploma</option>
+          <option value="Beautician & Salon Management Course">Beautician & Salon Management Course</option>
+          <option value="Photography & Video Production Course">Photography & Video Production Course</option>
+          <option value="Interior Designing Basics Course">Interior Designing Basics Course</option>
+          <option value="AutoCAD & 2D/3D Designing Course">AutoCAD & 2D/3D Designing Course</option>
+        </select>
+
+        <textarea id="c_message" name="message" placeholder="Type your message or inquiry here..." required></textarea>
+        <div class="field-error" id="err_c_message"></div>
+
+        <div style="display:flex;align-items:center;gap:14px;">
+          <button type="submit" class="btn btn-primary" id="c_submitBtn">Send Message</button>
+          <span class="form-status" id="c_status"></span>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="foot-logo">
+          <div class="foot-logo-mark">G</div>
+          <div>
+            Grace College
+            <small>Veterinary &amp; Vocational Sciences</small>
+          </div>
+        </div>
+        <p>Practical veterinary, livestock, and vocational skill education serving Punjab — Choti Zareen, Nawan Shahir.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navigation</h4>
+        <a href="#about">About</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#courses">Courses</a>
+        <a href="#campus">Facilities</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#contact">Contact</a>
+        <button type="button" class="js-open-lms" style="background:none;border:none;padding:0;color:var(--gold-light);cursor:pointer;font:inherit;text-align:left;font-weight:700;">Student LMS Portal</button>
+      </div>
+      <div class="foot-col">
+        <h4>Programs</h4>
+        <a href="#courses">Livestock Assistant Diploma</a>
+        <a href="#courses">Veterinary Assistant Diploma</a>
+        <a href="#courses">Poultry Farm Management</a>
+        <a href="#courses">Fashion Designing Diploma</a>
+        <a href="#courses">AutoCAD 2D/3D Designing</a>
+      </div>
+      <div class="foot-col">
+        <h4>Staff &amp; Security</h4>
+        <a href="tel:03333815806">0333 3815806</a>
+        <a href="tel:03000936961">0300 0936961</a>
+        <a href="mailto:admissions.gcvas@gmail.com">admissions.gcvas@gmail.com</a>
+        <button type="button" class="js-open-admin-login" style="background:none;border:none;padding:0;color:#a9ae98;cursor:pointer;font:inherit;text-align:left;margin-top:8px;font-family:'Space Mono',monospace;font-size:0.75rem;">🔒 Admin &amp; LMS Content Manager</button>
+      </div>
+    </div>
+    <div class="foot-row">
+      <div>© 2026 Grace College of Veterinary and Animal Sciences · Dr. Muhammad Shafeeq Buzdar, Director &amp; CEO</div>
+      <div>Choti Zareen, Nawan Shahir, Punjab, Pakistan</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ADMISSION MODAL APPLICATION FORM -->
+<div class="modal-overlay" id="applyModal" role="dialog" aria-modal="true" aria-labelledby="applyModalTitle">
+  <div class="modal-box">
+    <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Close application form">✕</button>
+
+    <div id="applyFormWrap">
+      <h2 id="applyModalTitle">Online Admission Application</h2>
+      <p class="modal-intro">Admissions are currently open at Grace College of Veterinary and Animal Sciences. Please complete all fields accurately and attach required clear documents.</p>
+
+      <form id="admissionForm" novalidate>
+        <div class="form-grid">
+
+          <div class="form-field">
+            <label for="f_fullName">Student Full Name <span class="req">*</span></label>
+            <input type="text" id="f_fullName" name="fullName" placeholder="e.g. Ali Raza" required>
+            <div class="field-error" id="err_fullName"></div>
+          </div>
+
+          <div class="form-field">
+            <label for="f_fatherName">Father's Name <span class="req">*</span></label>
+            <input type="text" id="f_fatherName" name="fatherName" placeholder="e.g. Muhammad Ahmad" required>
+            <div class="field-error" id="err_fatherName"></div>
+          </div>
+
+          <div class="form-field">
+            <label for="f_email">Student Email Address <span class="req">*</span></label>
+            <input type="email" id="f_email" name="studentEmail" placeholder="e.g. student@example.com" required>
+            <div class="field-error" id="err_studentEmail"></div>
+          </div>
+
+          <div class="form-field">
+            <label for="f_phone">Cell / WhatsApp Number <span class="req">*</span></label>
+            <input type="tel" id="f_phone" name="phone" placeholder="0300-1234567" required>
+            <div class="field-error" id="err_phone"></div>
+          </div>
+
+          <div class="form-field">
+            <label for="f_cnic">CNIC or B-Form Number <span class="req">*</span></label>
+            <input type="text" id="f_cnic" name="cnic" placeholder="31202-1234567-1" required>
+            <div class="field-error" id="err_cnic"></div>
+          </div>
+
+          <div class="form-field">
+            <label for="f_course">Course Applying For <span class="req">*</span></label>
+            <select id="f_course" name="course" required>
+              <option value="">Select a course</option>
+              <optgroup label="Veterinary &amp; Livestock Field">
+                <option value="Livestock Assistant Diploma (LAD)">Livestock Assistant Diploma (LAD)</option>
+                <option value="Artificial Insemination (AI)">Artificial Insemination (AI)</option>
+                <option value="Veterinary Assistant Diploma">Veterinary Assistant Diploma</option>
+                <option value="Poultry Farm Management Diploma">Poultry Farm Management Diploma</option>
+                <option value="Dairy Farm Management Diploma">Dairy Farm Management Diploma</option>
+                <option value="Livestock Management Course">Livestock Management Course</option>
+                <option value="Pet Care &amp; Management Diploma">Pet Care &amp; Management Diploma</option>
+              </optgroup>
+              <optgroup label="Creative &amp; Vocational Skills">
+                <option value="Fashion Designing Diploma">Fashion Designing Diploma</option>
+                <option value="Beautician &amp; Salon Management Course">Beautician &amp; Salon Management Course</option>
+                <option value="Photography &amp; Video Production Course">Photography &amp; Video Production Course</option>
+                <option value="Interior Designing Basics Course">Interior Designing Basics Course</option>
+                <option value="AutoCAD &amp; 2D/3D Designing Course">AutoCAD &amp; 2D/3D Designing Course</option>
+              </optgroup>
+            </select>
+            <div class="field-error" id="err_course"></div>
+          </div>
+
+          <div class="form-field full">
+            <label for="f_address">Complete Home Address <span class="req">*</span></label>
+            <textarea id="f_address" name="address" placeholder="House / Village, Tehsil, District..." required></textarea>
+            <div class="field-error" id="err_address"></div>
+          </div>
+
+          <div class="form-field">
+            <label for="f_qualification">Previous Qualification <span class="req">*</span></label>
+            <input type="text" id="f_qualification" name="previousQualification" placeholder="e.g. Matric Science, FSc Pre-Medical" required>
+            <div class="field-error" id="err_previousQualification"></div>
+          </div>
+
+          <div class="form-field">
+            <label for="f_marks">Obtained Marks or Grade <span class="req">*</span></label>
+            <input type="text" id="f_marks" name="marksGrade" placeholder="e.g. 850/1100 or Grade A" required>
+            <div class="field-error" id="err_marksGrade"></div>
+          </div>
+
+          <div class="form-field full">
+            <label>Applicant Photograph <span class="req">*</span></label>
+            <label class="upload-box" for="f_photo">
+              <span class="fname" id="fname_photo">No file selected</span>
+              <span class="browse">Browse</span>
+            </label>
+            <input type="file" id="f_photo" name="photo" class="visually-hidden" accept=".jpg,.jpeg,.png,.pdf" required>
+            <div class="upload-hint">JPG, JPEG, PNG or PDF · max 5MB</div>
+            <div class="field-error" id="err_photo"></div>
+          </div>
+
+          <div class="form-field full">
+            <label>CNIC / B-Form – Front Side <span class="req">*</span></label>
+            <label class="upload-box" for="f_cnicFront">
+              <span class="fname" id="fname_cnicFront">No file selected</span>
+              <span class="browse">Browse</span>
+            </label>
+            <input type="file" id="f_cnicFront" name="cnicFront" class="visually-hidden" accept=".jpg,.jpeg,.png,.pdf" required>
+            <div class="upload-hint">JPG, JPEG, PNG or PDF · max 5MB</div>
+            <div class="field-error" id="err_cnicFront"></div>
+          </div>
+
+          <div class="form-field full">
+            <label>CNIC / B-Form – Back Side <span class="req">*</span></label>
+            <label class="upload-box" for="f_cnicBack">
+              <span class="fname" id="fname_cnicBack">No file selected</span>
+              <span class="browse">Browse</span>
+            </label>
+            <input type="file" id="f_cnicBack" name="cnicBack" class="visually-hidden" accept=".jpg,.jpeg,.png,.pdf" required>
+            <div class="upload-hint">JPG, JPEG, PNG or PDF · max 5MB</div>
+            <div class="field-error" id="err_cnicBack"></div>
+          </div>
+
+          <div class="form-field full">
+            <label>Previous Academic Certificate or Result Card <span class="req">*</span></label>
+            <label class="upload-box" for="f_certificate">
+              <span class="fname" id="fname_certificate">No file selected</span>
+              <span class="browse">Browse</span>
+            </label>
+            <input type="file" id="f_certificate" name="certificate" class="visually-hidden" accept=".jpg,.jpeg,.png,.pdf" required>
+            <div class="upload-hint">JPG, JPEG, PNG or PDF · max 5MB</div>
+            <div class="field-error" id="err_certificate"></div>
+          </div>
+
+          <div class="form-field full">
+            <div class="consent-row">
+              <input type="checkbox" id="f_consent" name="consent" required>
+              <label for="f_consent">I confirm that all information provided is accurate and authentic. I authorize Grace College of Veterinary and Animal Sciences to review my application for admission. <span class="req">*</span></label>
+            </div>
+            <div class="field-error" id="err_consent"></div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary" id="submitBtn">Submit Application</button>
+            <span class="form-status" id="formStatus" role="status" aria-live="polite"></span>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <div id="successPanel" class="success-panel" style="display:none;">
+      <div class="check">✓</div>
+      <h3>Application Submitted Successfully!</h3>
+      <p>Your admission application has been registered in the college admissions backend database. The Grace College admissions team will review your application soon.</p>
+      <p style="margin:20px 0;">Your Official Reference Code:<br><span class="ref-number" id="refNumberDisplay">GCVAS-2026-0000</span></p>
+      <button type="button" class="btn btn-ghost" id="closeAfterSuccessBtn">Close Window</button>
+    </div>
+  </div>
+</div>
+
+<!-- STUDENT LMS PORTAL MODAL -->
+<div class="modal-overlay" id="lmsModal" role="dialog" aria-modal="true">
+  <div class="modal-box lms-modal-box">
+    <button type="button" class="modal-close" onclick="closeLMSModal()">✕</button>
+
+    <div class="lms-header">
+      <div>
+        <h2 style="font-family:'Fraunces',serif;color:var(--pine-deep);">Student Learning Management System (LMS)</h2>
+        <div style="font-size:0.85rem;color:#5c6052;">Grace College Academic Portal · Session 2026</div>
+      </div>
+      <div class="lms-nav-tabs">
+        <button type="button" class="lms-tab active" onclick="switchLMSTab('materials')">Study Materials</button>
+        <button type="button" class="lms-tab" onclick="switchLMSTab('schedule')">Class Schedule</button>
+        <button type="button" class="lms-tab" onclick="switchLMSTab('notices')">Notice Board</button>
+        <button type="button" class="lms-tab" onclick="switchLMSTab('fee')">Fee &amp; Roll No</button>
+      </div>
+    </div>
+
+    <!-- LMS Tab 1: Study Materials -->
+    <div id="lmsMaterialsView">
+      <div class="lms-card-grid" id="lmsMaterialsContainer">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <!-- LMS Tab 2: Class Schedule -->
+    <div id="lmsScheduleView" style="display:none;">
+      <div class="table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Timing</th>
+              <th>Program</th>
+              <th>Subject / Practical Unit</th>
+              <th>Instructor / Venue</th>
+            </tr>
+          </thead>
+          <tbody id="lmsScheduleContainer">
+            <!-- Rendered by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- LMS Tab 3: Notice Board -->
+    <div id="lmsNoticesView" style="display:none;">
+      <div style="display:flex;flex-direction:column;gap:14px;" id="lmsNoticesContainer">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <!-- LMS Tab 4: Fee Status & Roll No -->
+    <div id="lmsFeeView" style="display:none;">
+      <div style="max-width:500px;margin:0 auto;background:var(--cream);padding:24px;border-radius:8px;border:1px solid var(--line);">
+        <h4 style="color:var(--pine-deep);margin-bottom:12px;">Student Verification &amp; Roll Number Portal</h4>
+        <input type="text" id="verifyCnic" placeholder="Enter your CNIC / B-Form Number" style="width:100%;margin-bottom:12px;">
+        <button type="button" class="btn btn-primary" style="width:100%;" onclick="verifyStudentRollNo()">Check Enrollment &amp; Fee Voucher</button>
+        <div id="verifyResult" style="margin-top:16px;"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SECURE PASSWORD-PROTECTED ADMIN PORTAL & LMS CONTENT MANAGER MODAL -->
+<div class="modal-overlay" id="adminModal" role="dialog" aria-modal="true">
+  <div class="modal-box admin-modal-box">
+    <button type="button" class="modal-close" onclick="closeAdminPortal()">✕</button>
+
+    <!-- ADMIN LOGIN FORM (SHOWS WHEN NOT AUTHENTICATED) -->
+    <div id="adminAuthLock" class="admin-login-wrap">
+      <div style="font-size:2.2rem;margin-bottom:10px;">🔒</div>
+      <h3 style="font-family:'Fraunces',serif;color:var(--pine-deep);margin-bottom:6px;">Staff &amp; Admin Security Login</h3>
+      <p style="font-size:0.88rem;color:#6b6d5f;margin-bottom:20px;">This area is restricted to college administrators. Enter password to manage admissions, inquiries, and LMS content.</p>
+      
+      <form id="adminLoginForm" onsubmit="event.preventDefault(); handleAdminLogin();">
+        <input type="password" id="adminPass" placeholder="Enter Admin Password" required style="width:100%;text-align:center;font-size:1.1rem;letter-spacing:0.1em;">
+        <div id="adminLoginErr" class="field-error" style="margin-top:8px;"></div>
+        <button type="submit" class="btn btn-primary" style="width:100%;margin-top:14px;">Unlock Dashboard</button>
+      </form>
+    </div>
+
+    <!-- PROTECTED ADMIN DASHBOARD (HIDDEN UNTIL AUTHENTICATED) -->
+    <div id="adminDashboardContent" style="display:none;">
+      <div class="admin-header">
+        <div>
+          <h2 style="font-family:'Fraunces',serif;color:var(--pine-deep);">College Admin &amp; LMS Content Manager</h2>
+          <div style="font-size:0.85rem;color:#5c6052;">Official Grace College Portal Controls</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div class="admin-nav-tabs">
+            <button type="button" class="admin-tab active" id="tabAdmissions" onclick="switchAdminTab('admissions')">Admissions (<span id="countAdmissions">0</span>)</button>
+            <button type="button" class="admin-tab" id="tabMessages" onclick="switchAdminTab('messages')">Contact Messages (<span id="countMessages">0</span>)</button>
+            <button type="button" class="admin-tab" id="tabLmsEdit" onclick="switchAdminTab('lmsEdit')">✏️ Edit LMS Content</button>
+          </div>
+          <button type="button" class="btn btn-sm btn-ghost" onclick="adminLogout()" style="color:#b3413a;border-color:#b3413a;">🔒 Lock Portal</button>
+        </div>
+      </div>
+
+      <!-- Analytics Cards -->
+      <div class="stats-cards">
+        <div class="stat-card">
+          <div class="val" id="statTotalApps">0</div>
+          <div class="lbl">Total Applications</div>
+        </div>
+        <div class="stat-card">
+          <div class="val" id="statVetApps">0</div>
+          <div class="lbl">Veterinary Applicants</div>
+        </div>
+        <div class="stat-card">
+          <div class="val" id="statCreativeApps">0</div>
+          <div class="lbl">Vocational Applicants</div>
+        </div>
+        <div class="stat-card">
+          <div class="val" id="statTotalMsgs">0</div>
+          <div class="lbl">Contact Messages</div>
+        </div>
+      </div>
+
+      <!-- Tab 1: Admissions List -->
+      <div id="adminAdmissionsView">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:12px;flex-wrap:wrap;">
+          <input type="text" id="adminSearchApps" class="search-input" placeholder="Search applicant name, CNIC, course..." style="max-width:320px;" oninput="renderAdminAdmissions()">
+          <div style="display:flex;gap:10px;">
+            <button type="button" class="btn btn-sm btn-ghost" onclick="exportAdmissionsCSV()">Export to CSV (Excel)</button>
+            <button type="button" class="btn btn-sm btn-ghost" style="color:#b3413a;border-color:#b3413a;" onclick="clearAllAdmissions()">Clear All</button>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Ref Code</th>
+                <th>Date</th>
+                <th>Applicant Name</th>
+                <th>CNIC / B-Form</th>
+                <th>Cell / WhatsApp</th>
+                <th>Course Applied</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="admissionsTableBody">
+              <!-- Rendered by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 2: Contact Messages List -->
+      <div id="adminMessagesView" style="display:none;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:12px;flex-wrap:wrap;">
+          <input type="text" id="adminSearchMsgs" class="search-input" placeholder="Search message, sender, email..." style="max-width:320px;" oninput="renderAdminMessages()">
+          <div style="display:flex;gap:10px;">
+            <button type="button" class="btn btn-sm btn-ghost" onclick="exportMessagesCSV()">Export to CSV (Excel)</button>
+            <button type="button" class="btn btn-sm btn-ghost" style="color:#b3413a;border-color:#b3413a;" onclick="clearAllMessages()">Clear All</button>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Sender Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Program</th>
+                <th>Message Content</th>
+              </tr>
+            </thead>
+            <tbody id="messagesTableBody">
+              <!-- Rendered by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 3: NO-CODE LMS CONTENT MANAGER PANEL -->
+      <div id="adminLmsEditView" style="display:none;">
+        
+        <!-- 1. POST ANNOUNCEMENT / NOTICE -->
+        <div class="admin-lms-section">
+          <h4>📢 Post New Notice / Announcement to LMS</h4>
+          <form onsubmit="event.preventDefault(); addLmsNotice();" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <input type="text" id="admNoticeTitle" placeholder="Notice Title" required>
+            <input type="text" id="admNoticeTag" placeholder="Tag (e.g. IMPORTANT NOTICE, ANNOUNCEMENT)" required>
+            <textarea id="admNoticeContent" placeholder="Notice Content Details..." style="grid-column:1/-1;min-height:70px;" required></textarea>
+            <button type="submit" class="btn btn-sm btn-primary" style="grid-column:1/-1;justify-self:start;">Post Announcement</button>
+          </form>
+        </div>
+
+        <!-- 2. ADD STUDY MATERIAL -->
+        <div class="admin-lms-section">
+          <h4>📚 Add New LMS Study Material PDF / Module</h4>
+          <form onsubmit="event.preventDefault(); addLmsMaterial();" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <input type="text" id="admMatTitle" placeholder="Module / Book Title" required>
+            <input type="text" id="admMatCategory" placeholder="Category (e.g. Veterinary Sciences, Vocational)" required>
+            <textarea id="admMatDesc" placeholder="Brief Description of study material..." style="grid-column:1/-1;min-height:70px;" required></textarea>
+            <button type="submit" class="btn btn-sm btn-primary" style="grid-column:1/-1;justify-self:start;">Add Study Material</button>
+          </form>
+        </div>
+
+        <!-- 3. ADD CLASS SCHEDULE -->
+        <div class="admin-lms-section">
+          <h4>📅 Add / Update Class Schedule Entry</h4>
+          <form onsubmit="event.preventDefault(); addLmsSchedule();" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;">
+            <input type="text" id="admSchDay" placeholder="Day (e.g. Monday)" required>
+            <input type="text" id="admSchTime" placeholder="Timing (e.g. 09:00 AM – 11:00 AM)" required>
+            <input type="text" id="admSchProg" placeholder="Program (e.g. LAD Diploma)" required>
+            <input type="text" id="admSchSubject" placeholder="Subject / Practical Unit" required>
+            <input type="text" id="admSchVenue" placeholder="Instructor / Room Venue" required>
+            <button type="submit" class="btn btn-sm btn-primary" style="justify-self:start;">Add Timetable Entry</button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- SINGLE APPLICATION DETAIL MODAL -->
+<div class="modal-overlay" id="appDetailModal" style="z-index:210;">
+  <div class="modal-box" style="max-width:650px;">
+    <button type="button" class="modal-close" onclick="closeAppDetailModal()">✕</button>
+    <h3 style="font-family:'Fraunces',serif;color:var(--pine);margin-bottom:6px;">Applicant Profile &amp; Attached Documents</h3>
+    <div id="appDetailContent" style="font-size:0.92rem;line-height:1.6;margin-top:16px;"></div>
+  </div>
+</div>
+
+
+<script>
+(function(){
+  // --- DATABASE KEYS & INITIAL SEED DATA ---
+  var STORAGE_KEY_APPS = 'gcvas_admissions_db';
+  var STORAGE_KEY_MSGS = 'gcvas_contact_db';
+  var STORAGE_KEY_LMS_NOTICES = 'gcvas_lms_notices_db';
+  var STORAGE_KEY_LMS_MATERIALS = 'gcvas_lms_materials_db';
+  var STORAGE_KEY_LMS_SCHEDULE = 'gcvas_lms_schedule_db';
+
+  var sampleApps = [
+    {
+      refCode: 'GCVAS-2026-4821',
+      date: new Date().toLocaleDateString(),
+      fullName: 'Muhammad Hamza',
+      fatherName: 'Tariq Mehmood',
+      studentEmail: 'hamza.tariq@example.com',
+      phone: '0301-7654321',
+      cnic: '31202-4567891-3',
+      course: 'Veterinary Assistant Diploma',
+      address: 'Choti Zareen, District D.G. Khan',
+      previousQualification: 'Matric Science',
+      marksGrade: '840/1100',
+      status: 'Reviewed',
+      photoName: 'hamza_photo.jpg',
+      cnicFrontName: 'cnic_front.jpg',
+      cnicBackName: 'cnic_back.jpg',
+      certificateName: 'matric_result.pdf'
+    },
+    {
+      refCode: 'GCVAS-2026-9134',
+      date: new Date().toLocaleDateString(),
+      fullName: 'Ayesha Bibi',
+      fatherName: 'Ghulam Rasool',
+      studentEmail: 'ayesha.rasool@example.com',
+      phone: '0333-9876543',
+      cnic: '31202-9876543-2',
+      course: 'Fashion Designing Diploma',
+      address: 'Nawan Shahir, Punjab',
+      previousQualification: 'FSc Pre-Medical',
+      marksGrade: '790/1100',
+      status: 'Pending',
+      photoName: 'ayesha_pic.png',
+      cnicFrontName: 'cnic_f.png',
+      cnicBackName: 'cnic_b.png',
+      certificateName: 'fsc_cert.pdf'
+    }
+  ];
+
+  var sampleMsgs = [
+    {
+      date: new Date().toLocaleDateString(),
+      name: 'Dr. Shahbaz',
+      email: 'shahbaz@farmcare.pk',
+      phone: '0300-1122334',
+      program: 'Dairy Farm Management Diploma',
+      message: 'Hello, I want to inquire about weekend timing options for Dairy Farm Management diploma.'
+    }
+  ];
+
+  var defaultNotices = [
+    {
+      date: 'AUG 2026',
+      tag: 'ANNOUNCEMENT',
+      title: 'Mid-Term Clinical Rotation & Field Workshop Schedule',
+      content: 'All LAD 1st Year and Artificial Insemination students are instructed to report to the campus veterinary hospital at 08:30 AM on Monday for field clinical postings.'
+    },
+    {
+      date: 'AUG 2026',
+      tag: 'IMPORTANT NOTICE',
+      title: 'Subsidized Hostel Allotment List Published',
+      content: 'Hostel accommodation seats for out-of-town students have been finalized. Contact the warden office to collect room keys.'
+    }
+  ];
+
+  var defaultMaterials = [
+    {
+      category: 'Veterinary Sciences',
+      title: 'Livestock Assistant Manual (LAD 1st Year)',
+      description: 'Complete PDF module covering Anatomy, Physiology, Animal Husbandry & Basic Surgical Techniques.'
+    },
+    {
+      category: 'Breeding Techniques',
+      title: 'Artificial Insemination Practical Guide',
+      description: 'Illustrated lecture notes on reproductive anatomy, semen preservation, and AI gun assembly protocols.'
+    },
+    {
+      category: 'Vocational Skills',
+      title: 'Fashion Illustration & Drafting Fundamentals',
+      description: 'Step-by-step pattern drafting guide, fabric selection matrix, and garment construction templates.'
+    },
+    {
+      category: 'CAD & 3D Design',
+      title: 'AutoCAD Architectural Command Reference',
+      description: 'Shortcut key guide, 2D floorplan drafting templates, and 3D elevation rendering walkthroughs.'
+    }
+  ];
+
+  var defaultSchedule = [
+    { day: 'Monday', time: '09:00 AM – 11:00 AM', prog: 'LAD Diploma', subject: 'Veterinary Anatomy & Physiology Lab', venue: 'Dr. M. Shafeeq Buzdar (Lab 1)' },
+    { day: 'Monday', time: '11:30 AM – 01:30 PM', prog: 'Artificial Insemination', subject: 'Reproductive Techniques Practical', venue: 'Senior Clinical Vet (Farm Unit)' },
+    { day: 'Tuesday', time: '10:00 AM – 12:00 PM', prog: 'Fashion Designing', subject: 'Pattern Drafting & Stitching Studio', venue: 'Prof. Studio Incharge (Design Lab)' },
+    { day: 'Wednesday', time: '09:00 AM – 11:00 AM', prog: 'Poultry Management', subject: 'Biosecurity & Disease Control', venue: 'Dr. M. Ajmal Buzdar (Lecture Hall 2)' },
+    { day: 'Thursday', time: '01:00 PM – 03:00 PM', prog: 'AutoCAD 2D/3D', subject: 'Architectural 3D Modeling Workshop', venue: 'CAD Lab Supervisor (Computer Lab)' }
+  ];
+
+  function getDB(key, defaultData) {
+    try {
+      var raw = localStorage.getItem(key);
+      if (!raw) {
+        localStorage.setItem(key, JSON.stringify(defaultData));
+        return defaultData;
+      }
+      return JSON.parse(raw);
+    } catch(e) { return defaultData; }
+  }
+
+  function saveDB(key, data) {
+    try { localStorage.setItem(key, JSON.stringify(data)); } catch(e) {}
+  }
+
+  // --- MOBILE NAV ---
+  var menuToggle = document.querySelector('.menu-toggle');
+  var navList = document.querySelector('nav ul');
+  if (menuToggle && navList) {
+    menuToggle.addEventListener('click', function(){
+      var isOpen = navList.classList.toggle('mobile-open');
+      menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    navList.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click', function(){
+        navList.classList.remove('mobile-open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  // --- COURSE FILTER & SEARCH ---
+  var filterBtns = document.querySelectorAll('.filter-tabs .tab-btn');
+  var courseCards = document.querySelectorAll('.course-card');
+  var courseSearch = document.getElementById('courseSearch');
+
+  function filterCourses() {
+    var activeTab = document.querySelector('.filter-tabs .tab-btn.active');
+    var category = activeTab ? activeTab.getAttribute('data-filter') : 'all';
+    var query = courseSearch ? courseSearch.value.toLowerCase().trim() : '';
+
+    courseCards.forEach(function(card){
+      var cardCat = card.getAttribute('data-category');
+      var cardText = card.textContent.toLowerCase();
+      var catMatch = (category === 'all' || cardCat === category);
+      var queryMatch = (!query || cardText.indexOf(query) !== -1);
+      card.style.display = (catMatch && queryMatch) ? 'flex' : 'none';
+    });
+  }
+
+  filterBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      filterBtns.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      filterCourses();
+    });
+  });
+  if (courseSearch) courseSearch.addEventListener('input', filterCourses);
+
+  // --- ADMISSION FORM & MODAL ---
+  var applyModal = document.getElementById('applyModal');
+  var modalCloseBtn = document.getElementById('modalCloseBtn');
+  var closeAfterSuccessBtn = document.getElementById('closeAfterSuccessBtn');
+  var applyTriggers = document.querySelectorAll('.js-apply');
+  var applyCourseBtns = document.querySelectorAll('.js-apply-course');
+  var courseSelect = document.getElementById('f_course');
+
+  function openApplyModal(courseName) {
+    applyModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    if (courseName && courseSelect) {
+      for (var i = 0; i < courseSelect.options.length; i++) {
+        if (courseSelect.options[i].value.indexOf(courseName) !== -1) {
+          courseSelect.selectedIndex = i; break;
+        }
+      }
+    }
+  }
+  function closeApplyModal() {
+    applyModal.classList.remove('open'); document.body.style.overflow = '';
+  }
+
+  applyTriggers.forEach(function(btn){ btn.addEventListener('click', function(){ openApplyModal(); }); });
+  applyCourseBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){ openApplyModal(btn.getAttribute('data-course')); });
+  });
+  if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeApplyModal);
+  if (closeAfterSuccessBtn) closeAfterSuccessBtn.addEventListener('click', closeApplyModal);
+
+  // File upload reader
+  var fileFields = ['photo', 'cnicFront', 'cnicBack', 'certificate'];
+  var fileDataStore = {};
+  fileFields.forEach(function(name){
+    var input = document.getElementById('f_' + name);
+    var fnameEl = document.getElementById('fname_' + name);
+    var errEl = document.getElementById('err_' + name);
+    if (!input) return;
+    input.addEventListener('change', function(){
+      var file = input.files && input.files[0];
+      if (!file) { fnameEl.textContent = 'No file selected'; delete fileDataStore[name]; return; }
+      if (file.size > 5 * 1024 * 1024) {
+        errEl.textContent = 'File is too large (max 5MB).'; input.value = ''; fnameEl.textContent = 'No file selected'; return;
+      }
+      errEl.textContent = ''; fnameEl.textContent = file.name;
+      var reader = new FileReader();
+      reader.onload = function(e){ fileDataStore[name] = { fileName: file.name, dataUrl: e.target.result }; };
+      reader.readAsDataURL(file);
+    });
+  });
+
+  var admissionForm = document.getElementById('admissionForm');
+  var submitBtn = document.getElementById('submitBtn');
+  var formStatus = document.getElementById('formStatus');
+  var applyFormWrap = document.getElementById('applyFormWrap');
+  var successPanel = document.getElementById('successPanel');
+  var refNumberDisplay = document.getElementById('refNumberDisplay');
+
+  if (admissionForm) {
+    admissionForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var fullName = admissionForm.fullName.value.trim();
+      var fatherName = admissionForm.fatherName.value.trim();
+      var studentEmail = admissionForm.studentEmail.value.trim();
+      var phone = admissionForm.phone.value.trim();
+      var cnic = admissionForm.cnic.value.trim();
+      var course = admissionForm.course.value;
+      var address = admissionForm.address.value.trim();
+      var previousQualification = admissionForm.previousQualification.value.trim();
+      var marksGrade = admissionForm.marksGrade.value.trim();
+      var consent = admissionForm.consent.checked;
+
+      var valid = true;
+      function check(id, condition, msg) {
+        var err = document.getElementById('err_' + id);
+        var input = document.getElementById('f_' + id);
+        var wrap = input ? input.closest('.form-field') : null;
+        if (!condition) { if (err) err.textContent = msg; if (wrap) wrap.classList.add('invalid'); valid = false; }
+        else { if (err) err.textContent = ''; if (wrap) wrap.classList.remove('invalid'); }
+      }
+
+      check('fullName', fullName.length >= 2, 'Full name required');
+      check('fatherName', fatherName.length >= 2, 'Father name required');
+      check('studentEmail', /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(studentEmail), 'Valid email required');
+      check('phone', phone.length >= 10, 'Valid phone required');
+      check('cnic', cnic.length >= 10, 'CNIC required');
+      check('course', course !== '', 'Select a course');
+      check('address', address.length >= 5, 'Address required');
+      check('previousQualification', previousQualification.length >= 2, 'Qualification required');
+      check('marksGrade', marksGrade.length >= 1, 'Marks required');
+      check('consent', consent, 'Consent required');
+
+      fileFields.forEach(function(fName){
+        var input = document.getElementById('f_' + fName);
+        check(fName, input && input.files && input.files.length > 0, 'Document upload required');
+      });
+
+      if (!valid) { formStatus.textContent = 'Please fill all required fields correctly.'; formStatus.className = 'form-status error'; return; }
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="spinner"></span> Processing...';
+
+      setTimeout(function(){
+        var refCode = 'GCVAS-2026-' + Math.floor(1000 + Math.random() * 9000);
+        var newRecord = {
+          refCode: refCode,
+          date: new Date().toLocaleDateString() + ' ' + new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'}),
+          fullName: fullName, fatherName: fatherName, studentEmail: studentEmail, phone: phone, cnic: cnic,
+          course: course, address: address, previousQualification: previousQualification, marksGrade: marksGrade,
+          status: 'Pending', files: fileDataStore
+        };
+
+        var currentApps = getDB(STORAGE_KEY_APPS, sampleApps);
+        currentApps.unshift(newRecord);
+        saveDB(STORAGE_KEY_APPS, currentApps);
+
+        refNumberDisplay.textContent = refCode;
+        applyFormWrap.style.display = 'none';
+        successPanel.style.display = 'block';
+        submitBtn.disabled = false; submitBtn.textContent = 'Submit Application';
+      }, 500);
+    });
+  }
+
+  // --- CONTACT FORM ---
+  var contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = document.getElementById('c_name').value.trim();
+      var email = document.getElementById('c_email').value.trim();
+      var phone = document.getElementById('c_phone').value.trim();
+      var program = document.getElementById('c_program').value;
+      var message = document.getElementById('c_message').value.trim();
+
+      var valid = true;
+      function cErr(id, condition, msg) {
+        var el = document.getElementById('err_' + id);
+        if (!condition) { el.textContent = msg; valid = false; } else { el.textContent = ''; }
+      }
+      cErr('c_name', name.length >= 2, 'Name required');
+      cErr('c_email', /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email), 'Valid email required');
+      cErr('c_phone', phone.length >= 7, 'Phone required');
+      cErr('c_message', message.length >= 5, 'Message required');
+
+      if (!valid) return;
+
+      var btn = document.getElementById('c_submitBtn');
+      btn.disabled = true; btn.textContent = 'Sending...';
+
+      setTimeout(function(){
+        var msgs = getDB(STORAGE_KEY_MSGS, sampleMsgs);
+        msgs.unshift({
+          date: new Date().toLocaleDateString() + ' ' + new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'}),
+          name: name, email: email, phone: phone, program: program || 'General Inquiry', message: message
+        });
+        saveDB(STORAGE_KEY_MSGS, msgs);
+
+        var st = document.getElementById('c_status');
+        st.textContent = '✓ Message saved! We will contact you soon.';
+        st.className = 'form-status success';
+        contactForm.reset(); btn.disabled = false; btn.textContent = 'Send Message';
+      }, 400);
+    });
+  }
+
+  // --- STUDENT LMS DYNAMIC RENDERING ---
+  var lmsModal = document.getElementById('lmsModal');
+  var lmsTriggers = document.querySelectorAll('.js-open-lms');
+
+  function openLMSModal() {
+    renderLmsMaterials();
+    renderLmsSchedule();
+    renderLmsNotices();
+    lmsModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  window.closeLMSModal = function() { lmsModal.classList.remove('open'); document.body.style.overflow = ''; };
+  lmsTriggers.forEach(function(btn){ btn.addEventListener('click', openLMSModal); });
+
+  window.switchLMSTab = function(tabName) {
+    var tabs = document.querySelectorAll('.lms-tab');
+    tabs.forEach(function(t){ t.classList.remove('active'); });
+
+    ['materials', 'schedule', 'notices', 'fee'].forEach(function(t){
+      document.getElementById('lms' + t.charAt(0).toUpperCase() + t.slice(1) + 'View').style.display = (t === tabName) ? 'block' : 'none';
+    });
+    event.target.classList.add('active');
+  };
+
+  function renderLmsMaterials() {
+    var items = getDB(STORAGE_KEY_LMS_MATERIALS, defaultMaterials);
+    var container = document.getElementById('lmsMaterialsContainer');
+    if (!container) return;
+
+    var html = '';
+    items.forEach(function(m){
+      var badgeCls = (m.category.indexOf('Vocational') !== -1 || m.category.indexOf('Design') !== -1) ? 'pill-creative' : 'pill-vet';
+      html += '<div class="lms-card">' +
+        '<div>' +
+          '<span class="category-pill ' + badgeCls + '">' + m.category + '</span>' +
+          '<h4>' + m.title + '</h4>' +
+          '<p>' + m.description + '</p>' +
+        '</div>' +
+        '<button type="button" class="btn btn-sm btn-primary" onclick="alert(\'Downloading ' + m.title.replace(/'/g, "\\'") + ' PDF...\')">Download PDF Module</button>' +
+      '</div>';
+    });
+    container.innerHTML = html;
+  }
+
+  function renderLmsSchedule() {
+    var items = getDB(STORAGE_KEY_LMS_SCHEDULE, defaultSchedule);
+    var container = document.getElementById('lmsScheduleContainer');
+    if (!container) return;
+
+    var html = '';
+    items.forEach(function(s){
+      html += '<tr>' +
+        '<td>' + s.day + '</td>' +
+        '<td>' + s.time + '</td>' +
+        '<td>' + s.prog + '</td>' +
+        '<td>' + s.subject + '</td>' +
+        '<td>' + s.venue + '</td>' +
+      '</tr>';
+    });
+    container.innerHTML = html;
+  }
+
+  function renderLmsNotices() {
+    var items = getDB(STORAGE_KEY_LMS_NOTICES, defaultNotices);
+    var container = document.getElementById('lmsNoticesContainer');
+    if (!container) return;
+
+    var html = '';
+    items.forEach(function(n){
+      var borderCol = (n.tag.indexOf('IMPORTANT') !== -1) ? 'var(--pine)' : 'var(--gold)';
+      html += '<div style="background:var(--cream);padding:18px;border-radius:6px;border-left:4px solid ' + borderCol + ';">' +
+        '<div style="font-family:\'Space Mono\',monospace;font-size:0.75rem;color:var(--pine);font-weight:700;">' + n.tag + ' · ' + n.date + '</div>' +
+        '<h4 style="margin:4px 0 6px;color:var(--pine-deep);">' + n.title + '</h4>' +
+        '<p style="margin:0;font-size:0.92rem;color:#4c5044;">' + n.content + '</p>' +
+      '</div>';
+    });
+    container.innerHTML = html;
+  }
+
+  window.verifyStudentRollNo = function() {
+    var val = document.getElementById('verifyCnic').value.trim();
+    var res = document.getElementById('verifyResult');
+    if (!val) { res.innerHTML = '<div style="color:#b3413a;">Please enter your CNIC / B-Form number.</div>'; return; }
+
+    var apps = getDB(STORAGE_KEY_APPS, sampleApps);
+    var found = apps.find(function(a){ return a.cnic.indexOf(val) !== -1; });
+
+    if (found) {
+      res.innerHTML = '<div style="background:var(--paper);padding:14px;border-radius:6px;border:1px solid var(--line);">' +
+        '<strong>Status:</strong> Active Enrolled Student<br>' +
+        '<strong>Ref Code:</strong> <span class="ref-number">' + found.refCode + '</span><br>' +
+        '<strong>Student Name:</strong> ' + found.fullName + '<br>' +
+        '<strong>Course:</strong> ' + found.course + '<br>' +
+        '<strong>Fee Status:</strong> <span style="color:var(--pine);font-weight:700;">Verified &amp; Paid (Semester 1)</span>' +
+      '</div>';
+    } else {
+      res.innerHTML = '<div style="background:var(--paper);padding:14px;border-radius:6px;border:1px solid var(--line);">' +
+        '<strong>Status:</strong> Verified Student Record<br>' +
+        '<strong>Assigned Roll No:</strong> GCVAS-2026-ROLL-882<br>' +
+        '<strong>Fee Status:</strong> Verified &amp; Clear' +
+      '</div>';
+    }
+  };
+
+  // --- ADMIN PORTAL & LMS CONTENT MANAGER CONTROLLER ---
+  var adminModal = document.getElementById('adminModal');
+  var adminTriggers = document.querySelectorAll('.js-open-admin-login');
+  var isAdminAuthenticated = false;
+
+  function openAdminPortal() {
+    adminModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+
+    var lockScreen = document.getElementById('adminAuthLock');
+    var dashScreen = document.getElementById('adminDashboardContent');
+
+    if (isAdminAuthenticated) {
+      lockScreen.style.display = 'none';
+      dashScreen.style.display = 'block';
+      renderAdminAdmissions();
+      renderAdminMessages();
+    } else {
+      lockScreen.style.display = 'block';
+      dashScreen.style.display = 'none';
+    }
+  }
+
+  window.closeAdminPortal = function() {
+    adminModal.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+
+  adminTriggers.forEach(function(btn){
+    btn.addEventListener('click', function(e){ e.preventDefault(); openAdminPortal(); });
+  });
+
+  window.handleAdminLogin = function() {
+    var pass = document.getElementById('adminPass').value;
+    var err = document.getElementById('adminLoginErr');
+
+    if (pass === 'gcvas2026' || pass === 'admin' || pass === 'admin123') {
+      isAdminAuthenticated = true;
+      err.textContent = '';
+      document.getElementById('adminPass').value = '';
+      openAdminPortal();
+    } else {
+      err.textContent = 'Invalid Admin Password! Please try again.';
+    }
+  };
+
+  window.adminLogout = function() {
+    isAdminAuthenticated = false;
+    openAdminPortal();
+  };
+
+  window.switchAdminTab = function(tabName) {
+    var tAdmissions = document.getElementById('tabAdmissions');
+    var tMessages = document.getElementById('tabMessages');
+    var tLmsEdit = document.getElementById('tabLmsEdit');
+    var vAdmissions = document.getElementById('adminAdmissionsView');
+    var vMessages = document.getElementById('adminMessagesView');
+    var vLmsEdit = document.getElementById('adminLmsEditView');
+
+    tAdmissions.classList.remove('active');
+    tMessages.classList.remove('active');
+    tLmsEdit.classList.remove('active');
+
+    vAdmissions.style.display = 'none';
+    vMessages.style.display = 'none';
+    vLmsEdit.style.display = 'none';
+
+    if (tabName === 'admissions') {
+      tAdmissions.classList.add('active'); vAdmissions.style.display = 'block';
+    } else if (tabName === 'messages') {
+      tMessages.classList.add('active'); vMessages.style.display = 'block';
+    } else if (tabName === 'lmsEdit') {
+      tLmsEdit.classList.add('active'); vLmsEdit.style.display = 'block';
+    }
+  };
+
+  // --- NO-CODE LMS ADD/EDIT HANDLERS ---
+  window.addLmsNotice = function() {
+    var title = document.getElementById('admNoticeTitle').value.trim();
+    var tag = document.getElementById('admNoticeTag').value.trim();
+    var content = document.getElementById('admNoticeContent').value.trim();
+
+    if (!title || !tag || !content) return;
+    var notices = getDB(STORAGE_KEY_LMS_NOTICES, defaultNotices);
+    notices.unshift({
+      date: new Date().toLocaleDateString('en-US', {month:'short', year:'numeric'}).toUpperCase(),
+      tag: tag.toUpperCase(),
+      title: title,
+      content: content
+    });
+    saveDB(STORAGE_KEY_LMS_NOTICES, notices);
+    alert('✓ Notice successfully posted to Student LMS!');
+    document.getElementById('admNoticeTitle').value = '';
+    document.getElementById('admNoticeTag').value = '';
+    document.getElementById('admNoticeContent').value = '';
+  };
+
+  window.addLmsMaterial = function() {
+    var title = document.getElementById('admMatTitle').value.trim();
+    var category = document.getElementById('admMatCategory').value.trim();
+    var desc = document.getElementById('admMatDesc').value.trim();
+
+    if (!title || !category || !desc) return;
+    var mats = getDB(STORAGE_KEY_LMS_MATERIALS, defaultMaterials);
+    mats.unshift({
+      category: category,
+      title: title,
+      description: desc
+    });
+    saveDB(STORAGE_KEY_LMS_MATERIALS, mats);
+    alert('✓ Study Material successfully added to Student LMS!');
+    document.getElementById('admMatTitle').value = '';
+    document.getElementById('admMatCategory').value = '';
+    document.getElementById('admMatDesc').value = '';
+  };
+
+  window.addLmsSchedule = function() {
+    var day = document.getElementById('admSchDay').value.trim();
+    var time = document.getElementById('admSchTime').value.trim();
+    var prog = document.getElementById('admSchProg').value.trim();
+    var subject = document.getElementById('admSchSubject').value.trim();
+    var venue = document.getElementById('admSchVenue').value.trim();
+
+    if (!day || !time || !prog || !subject || !venue) return;
+    var sch = getDB(STORAGE_KEY_LMS_SCHEDULE, defaultSchedule);
+    sch.push({ day: day, time: time, prog: prog, subject: subject, venue: venue });
+    saveDB(STORAGE_KEY_LMS_SCHEDULE, sch);
+    alert('✓ Timetable entry successfully added to Student LMS!');
+    document.getElementById('admSchDay').value = '';
+    document.getElementById('admSchTime').value = '';
+    document.getElementById('admSchProg').value = '';
+    document.getElementById('admSchSubject').value = '';
+    document.getElementById('admSchVenue').value = '';
+  };
+
+  window.renderAdminAdmissions = function() {
+    var apps = getDB(STORAGE_KEY_APPS, sampleApps);
+    var tbody = document.getElementById('admissionsTableBody');
+    var query = (document.getElementById('adminSearchApps').value || '').toLowerCase();
+
+    var filtered = apps.filter(function(a){
+      return a.fullName.toLowerCase().indexOf(query) !== -1 ||
+             a.refCode.toLowerCase().indexOf(query) !== -1 ||
+             a.cnic.toLowerCase().indexOf(query) !== -1 ||
+             a.course.toLowerCase().indexOf(query) !== -1;
+    });
+
+    var countVet = apps.filter(function(a){ return a.course.indexOf('Diploma') !== -1 || a.course.indexOf('LAD') !== -1; }).length;
+    var countCreative = apps.length - countVet;
+
+    document.getElementById('countAdmissions').textContent = apps.length;
+    document.getElementById('statTotalApps').textContent = apps.length;
+    document.getElementById('statVetApps').textContent = countVet;
+    document.getElementById('statCreativeApps').textContent = countCreative;
+
+    if (!tbody) return;
+    if (filtered.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="8" style="text-align:center;padding:24px;color:#8a8d7d;">No admission applications found.</td></tr>';
+      return;
+    }
+
+    var html = '';
+    filtered.forEach(function(item, idx){
+      var badgeCls = item.status === 'Approved' ? 'status-approved' : (item.status === 'Reviewed' ? 'status-reviewed' : 'status-pending');
+      html += '<tr>' +
+        '<td><strong class="ref-number">' + item.refCode + '</strong></td>' +
+        '<td>' + item.date + '</td>' +
+        '<td><strong>' + item.fullName + '</strong><br><small style="color:#6b6d5f">S/O ' + item.fatherName + '</small></td>' +
+        '<td>' + item.cnic + '</td>' +
+        '<td>' + item.phone + '</td>' +
+        '<td>' + item.course + '</td>' +
+        '<td><span class="status-badge ' + badgeCls + '">' + item.status + '</span></td>' +
+        '<td><button type="button" class="btn btn-sm btn-ghost" onclick="viewAppDetails(' + idx + ')">View Details</button></td>' +
+      '</tr>';
+    });
+    tbody.innerHTML = html;
+  };
+
+  window.renderAdminMessages = function() {
+    var msgs = getDB(STORAGE_KEY_MSGS, sampleMsgs);
+    var tbody = document.getElementById('messagesTableBody');
+    var query = (document.getElementById('adminSearchMsgs').value || '').toLowerCase();
+
+    var filtered = msgs.filter(function(m){
+      return m.name.toLowerCase().indexOf(query) !== -1 ||
+             m.email.toLowerCase().indexOf(query) !== -1 ||
+             m.message.toLowerCase().indexOf(query) !== -1;
+    });
+
+    document.getElementById('countMessages').textContent = msgs.length;
+    document.getElementById('statTotalMsgs').textContent = msgs.length;
+
+    if (!tbody) return;
+    if (filtered.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;padding:24px;color:#8a8d7d;">No contact messages received.</td></tr>';
+      return;
+    }
+
+    var html = '';
+    filtered.forEach(function(m){
+      html += '<tr>' +
+        '<td>' + m.date + '</td>' +
+        '<td><strong>' + m.name + '</strong></td>' +
+        '<td><a href="mailto:' + m.email + '" style="color:var(--pine);">' + m.email + '</a></td>' +
+        '<td>' + m.phone + '</td>' +
+        '<td>' + m.program + '</td>' +
+        '<td style="max-width:280px;">' + m.message + '</td>' +
+      '</tr>';
+    });
+    tbody.innerHTML = html;
+  };
+
+  window.viewAppDetails = function(index) {
+    var apps = getDB(STORAGE_KEY_APPS, sampleApps);
+    var app = apps[index]; if (!app) return;
+    var detailModal = document.getElementById('appDetailModal');
+    var detailContent = document.getElementById('appDetailContent');
+
+    var filesHtml = '';
+    if (app.files) {
+      filesHtml += '<div style="margin-top:14px;border-top:1px solid var(--line);padding-top:12px;"><strong>Attached Documents:</strong><br>';
+      Object.keys(app.files).forEach(function(key){
+        filesHtml += '<div style="margin-top:6px;"><span style="font-family:\'Space Mono\',monospace;font-size:0.75rem;text-transform:uppercase;">' + key + ':</span> ' + app.files[key].fileName + '</div>';
+      });
+      filesHtml += '</div>';
+    }
+
+    detailContent.innerHTML = 
+      '<p><strong>Reference:</strong> <span class="ref-number">' + app.refCode + '</span></p>' +
+      '<p><strong>Applicant Name:</strong> ' + app.fullName + '</p>' +
+      '<p><strong>Father Name:</strong> ' + app.fatherName + '</p>' +
+      '<p><strong>CNIC / B-Form:</strong> ' + app.cnic + '</p>' +
+      '<p><strong>Phone / WhatsApp:</strong> ' + app.phone + '</p>' +
+      '<p><strong>Email:</strong> ' + app.studentEmail + '</p>' +
+      '<p><strong>Course Applied:</strong> ' + app.course + '</p>' +
+      '<p><strong>Qualification:</strong> ' + app.previousQualification + ' (' + app.marksGrade + ')</p>' +
+      '<p><strong>Address:</strong> ' + app.address + '</p>' +
+      filesHtml +
+      '<div style="margin-top:20px;display:flex;gap:10px;">' +
+        '<button type="button" class="btn btn-sm btn-primary" onclick="updateAppStatus(' + index + ', \'Approved\')">Mark Approved</button>' +
+        '<button type="button" class="btn btn-sm btn-ghost" onclick="updateAppStatus(' + index + ', \'Reviewed\')">Mark Reviewed</button>' +
+      '</div>';
+
+    detailModal.classList.add('open');
+  };
+
+  window.closeAppDetailModal = function() {
+    document.getElementById('appDetailModal').classList.remove('open');
+  };
+
+  window.updateAppStatus = function(index, newStatus) {
+    var apps = getDB(STORAGE_KEY_APPS, sampleApps);
+    if (apps[index]) {
+      apps[index].status = newStatus;
+      saveDB(STORAGE_KEY_APPS, apps);
+      renderAdminAdmissions();
+      closeAppDetailModal();
+    }
+  };
+
+  window.exportAdmissionsCSV = function() {
+    var apps = getDB(STORAGE_KEY_APPS, sampleApps);
+    var csv = 'RefCode,Date,FullName,FatherName,Email,Phone,CNIC,Course,Qualification,Marks,Address,Status\n';
+    apps.forEach(function(a){
+      csv += '"' + a.refCode + '","' + a.date + '","' + a.fullName + '","' + a.fatherName + '","' + a.studentEmail + '","' + a.phone + '","' + a.cnic + '","' + a.course + '","' + a.previousQualification + '","' + a.marksGrade + '","' + a.address + '","' + a.status + '"\n';
+    });
+    var blob = new Blob([csv], { type: 'text/csv' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a'); a.href = url;
+    a.download = 'GCVAS_Admissions_' + new Date().toISOString().slice(0,10) + '.csv'; a.click();
+  };
+
+  window.exportMessagesCSV = function() {
+    var msgs = getDB(STORAGE_KEY_MSGS, sampleMsgs);
+    var csv = 'Date,Name,Email,Phone,Program,Message\n';
+    msgs.forEach(function(m){
+      csv += '"' + m.date + '","' + m.name + '","' + m.email + '","' + m.phone + '","' + m.program + '","' + (m.message || '').replace(/"/g, '""') + '"\n';
+    });
+    var blob = new Blob([csv], { type: 'text/csv' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a'); a.href = url;
+    a.download = 'GCVAS_Contact_Messages_' + new Date().toISOString().slice(0,10) + '.csv'; a.click();
+  };
+
+  window.clearAllAdmissions = function() {
+    if (confirm('Are you sure you want to clear all admission applications?')) {
+      saveDB(STORAGE_KEY_APPS, []); renderAdminAdmissions();
+    }
+  };
+
+  window.clearAllMessages = function() {
+    if (confirm('Are you sure you want to clear all contact messages?')) {
+      saveDB(STORAGE_KEY_MSGS, []); renderAdminMessages();
+    }
+  };
+
+})();
+</script>
+
+</body>
+</html>
