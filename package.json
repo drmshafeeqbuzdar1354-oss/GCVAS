@@ -1,0 +1,18 @@
+{
+  "name": "gcvas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Grace College of Veterinary and Animal Sciences — site + local AI gateway helpers",
+  "scripts": {
+    "start": "node index.mjs",
+    "ai-gateway": "dotenv -e .env.local -- node scripts/ai-gateway.mjs",
+    "ai": "node index.mjs",
+    "dev": "npx dotenv -e .env.local -- node index.mjs"
+  },
+  "dependencies": {
+    "ai": "^1.0.0"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^5.0.0"
+  }
+}
